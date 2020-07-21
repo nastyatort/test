@@ -1,0 +1,77 @@
+header{
+  position: relative;
+}
+
+.menu{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.menu__list{
+  position: absolute;
+  left: -900px;
+  transition: 0.2s;
+  background: #252b33;
+  padding: 15px;
+
+}
+
+.menu__list.show{
+  left: -10px;
+  width: calc(100vw - 46px);
+}
+
+body{
+  background: black;
+  color: white;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+}
+
+.logo img{
+  width: 100%;
+}
+
+.menu ul{
+  list-style: none;
+}
+
+.menu ul li{
+  font-size: 20px;
+  line-height: 24px;
+  padding: 4px 0;
+}
+
+.item__img{
+  padding: 15px;
+  width: calc(100% - 30px);
+}
+
+.item__img img{
+  width: 100%;
+}
+
+.content__title{
+  font-size: 50px;
+  text-align: center;
+}
+
+.main__page{
+  background: url(../img/main.png) 50% 50% no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+
+h4{
+  font-size: 30px;
+  text-align: center;
+}
