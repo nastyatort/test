@@ -47,8 +47,13 @@ a{
 
 .menu ul li{
   font-size: 20px;
-  line-height: 24px;
+  line-height: 28px;
   padding: 4px 0;
+}
+
+.menu ul li a{
+  display: block;
+  width: 100%;
 }
 
 .item__img{
@@ -74,4 +79,8 @@ a{
 h4{
   font-size: 30px;
   text-align: center;
+}
+
+.item__description li{
+  line-height: 30px;
 }
