@@ -277,12 +277,24 @@ footer a:hover{
   .language__block div{
     padding: 0 10px;
   }
+
+  .rate__block .item {
+    padding: 10px;
+  }
 }
 
 .main__header .item img{
   width: 132px;
   height: 60px;
   margin-top: 8px;
+}
+
+@media screen and (max-width: 800px) {
+  .main__header .item img{
+    width: 100px;
+    height: 46px;
+    margin-top: 8px;
+  }
 }
 
 .rate__block .fb{
