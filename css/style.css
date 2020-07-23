@@ -2,6 +2,23 @@ header{
   position: relative;
 }
 
+a, p, li, button, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+body{
+  margin: 0;
+}
+
+a:hover{
+  opacity: 0.5;
+}
+
 .menu{
   position: absolute;
   top: 10px;
@@ -37,8 +54,13 @@ a{
   justify-content: center;
 }
 
+.logo a:hover{
+  opacity: 0.7;
+}
+
 .logo img{
   width: 100%;
+  max-height: 200px;
 }
 
 .menu ul{
@@ -71,9 +93,9 @@ a{
 }
 
 .main__page{
-  background: url(../img/main.png) 50% 50% no-repeat;
-  background-size: cover;
-  height: 70vh;
+  background: url(../img/main.jpg) 50% 50% no-repeat;
+  min-height: calc(100vh - 260px);
+  padding-top: 100px;
 }
 
 h4{
@@ -85,18 +107,99 @@ h4{
   line-height: 30px;
 }
 
+.item__description{
+  padding: 0 15px;
+}
+
 .item__cost{
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   padding: 0 15px;
   font-size: 24px;
 }
 
-.item{
+.item__cost p:first-child{
+  padding-right: 7px;
+}
+
+.content{
+  padding: 0 20px;
+}
+
+.content .item{
   border-bottom: 1px solid white;
+  padding-top: 40px;
 }
 
 .main__list{
   font-size: 30px;
   line-height: 36px;
+  padding-left: 70px;
+}
+
+.main__header{
+  position: fixed;
+  width: calc(100% - 30px);
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+  z-index: 1000;
+  background: black;
+  -webkit-box-shadow: 0px 3px 20px 0px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 3px 20px 0px rgba(255,255,255,1);
+  box-shadow: 0px 3px 20px 0px rgba(255,255,255,1);
+}
+
+.main__header a{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.rate__block{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.rate__block .item{
+  padding: 0 30px;
+}
+
+.language__block{
+  display: flex;
+}
+
+.language__block div{
+padding: 0 15px;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  padding: 20px 100px 40px 100px;
+}
+
+footer a{
+  color: #c9cace;
+  background: #262626;
+  border: none;
+  width: 440px;
+  outline: none;
+  border-radius: 4px;
+  padding: 18px 0;
+  font-size: 24px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 20px 2px rgba(255,255,255,1);
+box-shadow: 0px 0px 20px 2px rgba(255,255,255,1);
+}
+
+footer a:hover{
+  opacity: 1;
+  background: #9d9ea1;
+  color: #262626;
 }
