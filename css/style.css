@@ -118,6 +118,13 @@ h4{
   font-size: 24px;
 }
 
+
+@media screen and (max-width: 800px) {
+  .item__cost{
+    justify-content: space-between
+  }
+}
+
 .item__cost p:first-child{
   padding-right: 7px;
 }
@@ -190,6 +197,14 @@ h4{
     line-height: 48px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .main__list li{
+    line-height: 30px;
+    font-size: 24px;
+  }
+}
+
 
 .language__block{
   display: flex;
