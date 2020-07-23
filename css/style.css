@@ -123,6 +123,10 @@ h4{
   .item__cost{
     justify-content: space-between
   }
+
+  .main__page{
+    background-size: cover;
+  }
 }
 
 .item__cost p:first-child{
@@ -202,6 +206,18 @@ h4{
   .main__list li{
     line-height: 30px;
     font-size: 24px;
+  }
+
+  .rate__block .item{
+    padding: 0 20px;
+  }
+  
+  .language__block div{
+    padding: 0 10px;
+  }
+
+  .item__description ul li{
+    padding-left: 30px;
   }
 }
 
