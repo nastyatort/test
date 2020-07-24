@@ -219,3 +219,9 @@ iframe{
     width: 100%;
   }
   }
+
+  @media screen and (max-width: 600px) {
+  .rate__block .item:first-child{
+    padding: 10px 3px;
+  }
+  }
